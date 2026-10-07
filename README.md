@@ -7,15 +7,15 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Scikit-Learn Compatible](https://img.shields.io/badge/scikit--learn-compatible-orange.svg)](https://scikit-learn.org/)
 
-A high-performance, scikit-learn compatible **Cluster-Aware Tabular Imputer** for mixed numerical and categorical datasets, published in ***Nature Scientific Reports***.
+A scikit-learn compatible **Cluster-Aware Tabular Imputer** for mixed numerical and categorical datasets, published in ***Nature Scientific Reports***.
 
-📖 **Paper:** [Cluster-aware imputation: a hybrid XGBoost-based model for missing data](https://doi.org/10.1038/s41598-026-70170-9)  
-🏛️ **Journal:** *Scientific Reports* (Springer Nature), Vol. 16, Art. 70170 (2026)  
-🔗 **DOI:** [10.1038/s41598-026-70170-9](https://doi.org/10.1038/s41598-026-70170-9)
+- **Paper:** [Cluster-aware imputation: a hybrid XGBoost-based model for missing data](https://doi.org/10.1038/s41598-026-70170-9)
+- **Journal:** *Scientific Reports* (Springer Nature), Volume 16, Article 70170 (2026)
+- **DOI:** [10.1038/s41598-026-70170-9](https://doi.org/10.1038/s41598-026-70170-9)
 
 ---
 
-## 🌟 Overview
+## Overview
 
 `ClusterImputer` (also available as `ClusteringImputer`) addresses the limitation of traditional MICE global regression models by learning **local correlation structures** within tabular data:
 
@@ -27,7 +27,7 @@ A high-performance, scikit-learn compatible **Cluster-Aware Tabular Imputer** fo
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ```bash
 pip install cluster-imputer
@@ -42,7 +42,7 @@ pip install cluster-imputer
 
 ---
 
-## 💡 Quick Start
+## Quick Start
 
 ```python
 import numpy as np
@@ -71,7 +71,7 @@ print(df_imputed)
 
 ---
 
-## 🔗 Integration with Scikit-Learn Pipelines
+## Scikit-Learn Pipeline Integration
 
 `ClusterImputer` inherits from `BaseEstimator` and `TransformerMixin`, making it seamlessly compatible with `Pipeline`, `ColumnTransformer`, and cross-validation:
 
@@ -91,9 +91,9 @@ predictions = pipe.predict(X_test)
 
 ---
 
-## ⚙️ Hyperparameter Auto-Tuning
+## Hyperparameter Selection
 
-Not sure which parameters to choose for your dataset? Use `suggest_imputer_params`:
+To estimate recommended parameters based on dataset dimensionality and missingness ratio, use `suggest_imputer_params`:
 
 ```python
 from cluster_imputer import suggest_imputer_params
@@ -107,7 +107,7 @@ df_clean = imputer.fit_transform(df)
 
 ---
 
-## 📖 Parameters & API Reference
+## Parameters and API Reference
 
 ### `ClusterImputer` / `ClusteringImputer`
 
@@ -129,7 +129,7 @@ df_clean = imputer.fit_transform(df)
 
 ---
 
-## 📄 Citation
+## Citation
 
 If you use `ClusterImputer` in your research, please cite our article in ***Scientific Reports***:
 
@@ -150,6 +150,6 @@ If you use `ClusterImputer` in your research, please cite our article in ***Scie
 
 ---
 
-## 🛡️ License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

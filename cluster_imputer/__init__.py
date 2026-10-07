@@ -16,7 +16,7 @@ from .utils import (
     compute_wcss,
 )
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Mohamed Emad"
 __email__ = "mohamed.emad222210@gmail.com"
 
